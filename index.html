@@ -4,15 +4,379 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Deploy your websites in less than 60 seconds">
+    <meta property="og:title" content="Share title">
+    <meta property="og:description" content="Share Information">
+    <meta property="og:type" content="Share source type">
+    <meta property="og:image" content="http://">
+    <meta property="og:url" content="http://website">
+
+
+    <title>Notendo - Go Online for just $9</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/9be2bf27d5.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+   <header>
+    <nav class="nav collapsible">
+        <a class="nav__brand" href="/">
+            <img src="images/nitendo.svg"  alt="">
+        </a>
+        <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="#">Nintendo Switch</a></li>
+            <li class="nav__item"><a href="#">Games</a></li>
+            <li class="nav__item"><a href="#">News & Articles</a></li>
+            <li class="nav__item"><a href="#">Support</a></li>
+        </ul>
+    </nav> 
+   </header>
    
+   <section class="block block--dark block--skewed-left hero">
+    <div class="container grid grid--1x2">
+         <header class="block__header hero__content">
+             <h1 class=" block__heading">Super Amazing Games for Players</h1>
+             <p class="hero__tagline">Expore your favorate games</p>
+             <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+         </header>
+         <picture>
+             <source type="image/webp" srcset="images/games.webp 1x, images/games@2x.webp 2x">
+             <source type="image/png" srcset="images/games.png 1x, images/games@2x.png 2x">
+             <img class="hero__image" src="images/games.png" alt="">
+         </picture>
+
+    </div>
+    </section>
+
+    <section class="block container block-domain">
+        <header class="block__header">
+            <h2>Starting at $34 per month</h2>
+            <p>Most of games are available to download</p>
+        </header>
+        <div class="input-group">
+         <input type="text" class="input" placeholder="Choose your games..."/>
+         <button class="btn btn--accent">
+             <svg class="icon icon--white">
+                 <use xlink:href="images/sprite.svg#search"></use>
+             </svg>
+             Search
+         </button>
+     </div>
+     <ul data-aos="fade-left"class="list block-domain__prices">
+         <li>Animal Crossing</li>
+         <li data-aos="fade-left" data-aos-duration="3000" ><span class="badge badge--accent">The Legend of Zelda</span></li>
+         <li>Ring Fit Adventure</li>    
+         <li>Pokemon Sword</li>
+         <li>Pokemon Shield</li>
+         <li>Luigi's Mansion</li>
+     </ul>
+    </section>
+
+    <section class="block container block-plans">
+        <div class="grid grid--1x3">
+          <div class="plan">
+              <div class="card card--secondary">
+                  <header class="card__header">
+                      <!-- <img src="images/popular.svg" alt=""> -->
+                      <h3 class="plan__name">Basic</h3>
+                      <span class="plan__price">$34</span>
+                      <span class="plan__billing-cycle">/month</span>
+                      <span class="badge badge--secondary badge--small">10% Off</span>
+                      <span class="plan__description">Get basic games</span>
+                  </header>
+                  <div class="card__body">
+                      <ul class="list list--tick">
+                          <li class="list__item">No Download Limitation</li>
+                          <li class="list__item">Share Games with Family</li>
+                          <li class="list__item">Remote Game Data Storage</li>
+                          <li class="list__item">50% Games Available</li>
+                      </ul>                  
+                  </div>
+                  <button class="btn btn--outline btn--block">Buy Now</button>
+              </div>
+          </div>
+          <div class="plan plan--popular">
+              <div class="card card--primary">
+                  <header class="card__header">
+                      <!-- <img src="images/popular.svg" alt=""> -->
+                      <h3 class="plan__name">Premium</h3>
+                      <span class="plan__price">$45</span>
+                      <span class="plan__billing-cycle">/month</span>
+                      <span class="badge badge--primary badge--small">15% Off</span>
+                      <span class="plan__description">Get popular games</span>
+                  </header>
+                  <div class="card__body">
+                      <ul class="list list--tick">
+                          <li class="list__item">No Download Limitation</li>
+                          <li class="list__item">Share Games with Family</li>
+                          <li class="list__item">Remote Game Data Storage</li>
+                          <li class="list__item">75% Games Available</li>
+                      </ul>                  
+                  </div>
+                  <button class="btn btn--outline btn--block">Buy Now</button>
+              </div>
+          </div>
+          <div class="plan ">
+              <div class="card card--secondary">
+                  <header class="card__header">
+                      <!-- <img src="images/popular.svg" alt=""> -->
+                      <h3 class="plan__name">Gold</h3>
+                      <span class="plan__price">$60</span>
+                      <span class="plan__billing-cycle">/month</span>
+                      <span class="badge badge--secondary badge--small">20% Off</span>
+                      <span class="plan__description">Easy start on the cloud</span>
+                  </header>
+                  <div class="card__body">
+                      <ul class="list list--tick">
+                          <li class="list__item">No Download Limitation</li>
+                          <li class="list__item">Share Games with Friends</li>
+                          <li class="list__item">Remote Game Data Storage</li>
+                          <li class="list__item">90% Games Available</li>
+                      </ul>                  
+                  </div>
+                  <button class="btn btn--outline btn--block">Buy Now</button>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="block container">
+        <header class="block__header">
+            <h2>Browsing the most popular games</h2>
+            <p>All games below are downloadable among premium members</p>
+        </header>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-right">
+              <span class="icon-container">
+                <img class="icon" src="images/switch.png" alt="">
+              </span>
+              <h3 class="feature__heading">The Legend of Zelda™: Breath of the Wild</h3>
+              <p>Explore the landscape of Hyrule any way you like. Climb up towers and mountain peaks in search of new destinations, and use a mysterious tablet called the Sheikah Slate to view a map of Hyrule and scope out points of interest.</p>
+              <a href="#" class="link-arrow">Learn More</a>
+            </div>
+            <picture data-aos="zoom-in-left">
+                <source type="image/webp" srcset="images/The_Legend_of_Zelda.webp 1x, images/The_Legend_of_Zelda@2x.webp 2x">
+                <source type="image/jpg" srcset="images/The_Legend_of_Zelda.jpg 1x, images/The_Legend_of_Zelda@2x.jpg 2x">
+                <img class="feature__image" src="images/The_Legend_of_Zelda@2x.jpg" alt="">
+            </picture>
+          </article>
+          <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="zoom-out-down">
+              <span class="icon-container">
+                  <img class="icon" src="images/switch.png" alt="">
+              </span>
+              <h3 class="feature__heading">Super Smash Bros</h3>
+              <p>Legendary game worlds and fighters collide in the ultimate showdown – a new entry in the Super Smash Bros.</p>
+              <a href="#" class="link-arrow">Learn More</a>
+            </div>
+            <picture data-aos="zoom-out-right">
+                <source type="image/webp" srcset="images/Super_Smash_Bros.webp 1x, images/Super_Smash_Bros@2x.webp 2x">
+                <source type="image/jpg" srcset="images/Super_Smash_Bros.jpg 1x, images/Super_Smash_Bros@2x.jpg 2x">
+                <img class="feature__image" src="images/Super_Smash_Bros@2x.jpg" alt="">
+            </picture>
+          </article>
+          <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-right">
+              <span class="icon-container">
+                <img class="icon" src="images/switch.png" alt="">
+              </span>
+              <h3 class="feature__heading">Mario Party Superstars</h3>
+              <p>Mario Party is back with five classic boards from the Nintendo 64 Mario Party games. Frosting meets flowers as you race to get the most stars (and sabotage your opponents) on the Peach’s Birthday Cake board from the original Mario Party game.</p>
+              <a href="#" class="link-arrow">Learn More</a>
+            </div>
+            <picture data-aos="zoom-in-left">
+                <source type="image/webp" srcset="images/Mario_Party_Superstars.webp 1x, images/Mario_Party_Superstars@2x.webp 2x">
+                <source type="image/jpg" srcset="images/Mario_Party_Superstars.jpg 1x, images/Mario_Party_Superstars@2x.jpg 2x">
+                <img class="feature__image" src="images/Mario_Party_Superstars@2x.jpg" alt="">
+            </picture>
+          </article>
+          <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-right">
+              <span class="icon-container">
+                <img class="icon" src="images/switch.png" alt="">
+              </span>
+              <h3 class="feature__heading">Animal Crossing: New Horizons</h3>
+              <p>If the hustle and bustle of modern life’s got you down, Tom Nook has a business venture up his sleeve that he knows you’ll adore: his brand-new, ultra-exclusive Nook Inc. Deserted Island Getaway Package! </p>
+              <a href="#" class="link-arrow">Learn More</a>
+            </div>
+            <picture data-aos="zoom-in-left">
+                <source type="image/webp" srcset="images/animal_crossing.webp 1x, images/animal_crossing@2x.webp 2x">
+                <source type="image/jpg" srcset="images/animal_crossing.jpg 1x, images/animal_crossing@2x.jpg 2x">
+                <img class="feature__image" src="images/animal_crossing@2x.jpg" alt="">
+            </picture>
+          </article>
+    </section>
+
+    <section class="block block--dark block--skewed-right block-showcase">
+        <header class="block__header">
+            <h2 >Nintendo Switch OLED Model</h2>
+        </header>
+        <div class="container grid grid--1x2">
+            <picture class="block-showcase__image" 
+            data-aos="fade-up"
+            data-aos-duration="2000"> 
+                <source type="image/webp" srcset="images/nintendo_switch_oled.webp 1x,images/nintendo_switch_oled@2x.webp 2x ">
+                <source type="image/png" srcset="images/nintendo_switch_oled.png 1x,images/nintendo_switch_oled@2x.png 2x ">
+                <img  src="images/nintendo_switch_oled.png" alt="">
+            </picture>
+            <ul class="list" 
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <i class="fa-solid fa-pen-ruler fa-2xl awsomeIcom--primary"></i>
+                        </div>
+                         <div class="media__body">
+                             <h3 class="media__title">Design Innovation</h3>
+                             <p>The Nintendo Switch OLED looks similar to the original Switch after its 2019 refresh. It has removable Joy-Con controllers, the same button layout, and even offers that familiar bright Neon Blue and Red color scheme.</p>
+                         </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <i class="fa-solid fa-display fa-2xl awsomeIcom--primary"></i>
+                        </div>
+                         <div class="media__body">
+                             <h3 class="media__title">OLED screen</h3>
+                             <p>These display panels have emissive pixels, which means black parts of the screen image will look perfectly inky black even if you play under the covers in perfect darkness.</p>
+                         </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <i class="fa-solid fa-battery-full fa-2xl awsomeIcom--primary"></i>
+                        </div>
+                         <div class="media__body">
+                             <h3 class="media__title">Power</h3>
+                             <p>The Switch OLED has the same Nvidia Custom Tegra processor and RAM as the standard Switch model, so there’s no upgrade in power under the hood. </p>
+                         </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="block">
+        <header class="block__header">
+            <h2>GAME NEWS</h2>
+            <p>The mystery of Malzeno – Monster Hunter Rise: Sunbreak!</p>
+            <div class="container">
+                <div class="card testimonial">
+                    <div class="grid grid--1x2">
+                        <div class="testimonial__image" data-aos="fade-right">
+                            <img src="images/mario.jpg" alt="Mario">
+                            <span class="icon-container icon-container--accent">
+                                <svg class="icon icon--white icon--small">
+                                    <use xlink:href="images/sprite.svg#quotes"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <blockquote class="quote" 
+                        data-aos="fade-left"
+                        data-aos-duration="1000">
+                            <p class="quote__text">Monster Hunter Rise: Sunbreak is an expansion to the original Monster Hunter Rise game which launches 30th June.
+                                <br><br>Featuring improved gameplay and nimble-feeling additions to combat mechanics, unique new monsters and hunting locales, and a new difficulty level in the form of Master Rank quests.
+                                <br><br>As the hunter who saved Kamura from calamity, you must now journey to the far-off reaches of Elgado, an outpost near a Kingdom beset by a sinister new nemesis—the elder dragon Malzeno!
+                                <br><br>Watch the latest Monster Hunter Rise: Sunbreak trailer below for a closer look at its flagship monster Malzeno, as well as other returning beasties joining the fray!
+                            </p>
+                            
+                        <footer>
+                            <div class="media">
+                                <div class="media__image">
+                                     <svg class="icon icon--primary quote__line">
+                                         <use xlink:href="images/sprite.svg#line"></use>
+                                     </svg>
+                                </div>
+                                 <div class="media__body">
+                                     <h3 class="media__title quote__author">Nitendo Team</h3>
+                                     <p class="quote__organization">June 1st</p>
+                                 </div>
+                            </div>
+                        </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <footer class="block block--dark footer">
+        <div class="container grid footer__sections">
+            <section class="collapsible collapsible--expanded footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading" >About Nintendo</h2>
+                    <img class="icon icon--white collapsible__chevron" src="images/chevron.svg" alt="chevron"/>
+                </div>
+                <div class="collapsible__content">
+                   <ul class="list list--small">
+                       <li><a href="#">History</a> </li>
+                       <li><a href="#">Careers</a></li>
+                       <li><a href="#">Corporate Social Responsibility</a></li>
+                   </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header ">
+                    <h2 class="collapsible__heading footer__heading">Support</h2>
+                    <img class="icon icon--white collapsible__chevron" src="images/chevron.svg" alt="chevron"/>
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list list--small">
+                        <li><a href="#">Warranty</a> </li>
+                        <li><a href="#">Manuals & Documents</a></li>
+                        <li><a href="#">Product Support</a></li>
+                        <li><a href="#">Notifications</a></li>
+                    </ul>                              
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Parents</h2>
+                    <img class="icon icon--white collapsible__chevron" src="images/chevron.svg" alt="chevron"/>
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list list--small">
+                        <li><a href="#">Information for Parents</a> </li>
+                        <li><a href="#">Parental Controls</a></li>
+                        <li><a href="#">Game Classifications</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Community</h2>
+                    <img class="icon icon--white collapsible__chevron" src="images/chevron.svg" alt="chevron"/>
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list list--small">
+                        <li><a href="#">Community Guildelines</a> </li>
+                        <li><a href="#">Online Safety Principles</a></li>
+                    </ul>
+                </div>
+            </section>
+            <div class="footer__brand">
+                <img src="images/nitendo.svg" alt="">
+                <p class="footer__copyright">Copyright 2022 Ming</p>
+            </div>
+        </div>
+    </footer>
+
    <script src="js/main.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
 </body>
 </html>
